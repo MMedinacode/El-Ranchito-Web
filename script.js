@@ -1,18 +1,16 @@
 /* ============================================================
-   FOTOS Y LOGO — PENDIENTES (placeholder temporal)
+   FOTOS REALES DEL LOCAL (11-09-2026) — ya no queda stock
    ============================================================
-   El usuario aún no ha dejado fotos reales en fotos/. Mientras tanto
-   se usan fotos de stock de Unsplash con temática pizzería/cocina de
-   barrio (nunca fotos reales de otra cafetería del portafolio).
-   Reemplazar por las reales apenas lleguen. */
-const LOGO_SRC = 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop&q=80';
-const HERO_SRC = 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1600&q=80';
-const GAL_UNO_SRC = 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=800&q=80';
-const GAL_DOS_SRC = 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80';
-const GAL_TRES_SRC = 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80';
+   4 fotos bajadas de su propia ficha de Google Maps y revisadas una
+   por una: pizza de mariscos, pizza con verduras, fetuccini en la
+   terraza (con su mantel a cuadros rojo y el enrejado con flores) y
+   un brownie servido en el interior de madera.
+   Sin logo real: el negocio no tiene isotipo propio, va wordmark. */
+const HERO_SRC = 'fotos/fetuccini-terraza.jpg';
+const GAL_UNO_SRC = 'fotos/pizza-mariscos.jpg';
+const GAL_DOS_SRC = 'fotos/brownie-interior.jpg';
+const GAL_TRES_SRC = 'fotos/pizza-verduras.jpg';
 
-document.getElementById('logoNav').src = LOGO_SRC;
-document.getElementById('logoFooter').src = LOGO_SRC;
 document.getElementById('heroPhoto').src = HERO_SRC;
 document.getElementById('galUno').src = GAL_UNO_SRC;
 document.getElementById('galDos').src = GAL_DOS_SRC;
