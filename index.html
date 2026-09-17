@@ -42,7 +42,7 @@
   - Revisión de seguridad de contenido (regla del portafolio): se revisaron las reseñas de
     Google con cuidado — sin ninguna señal de "café con piernas" ni similar. Todas las reseñas
     hablan de comida (pizza, pasta, almuerzos), atención y ambiente familiar de barrio.
-  - 3 reseñas reales positivas con nombre, tal como las mostró Google Maps por defecto (Cecilia
+  - 3 reseñas positivas con nombre, tal como las mostró Google Maps por defecto (Cecilia
     Poblete, Mokka Cafe, Ximena) — no fue necesario reordenar por "Calificación más alta".
   - Fotos/logo: PENDIENTES — el usuario aún no ha dejado fotos reales en fotos/. Se usan fotos de
     stock (Unsplash) con temática pizzería/cocina de barrio, marcadas como temporales en script.js.
@@ -82,6 +82,71 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cocinería y Café El Ranchito",
+  "description": "Cocinería y Café El Ranchito. EL HORNO ESTÁ ENCENDIDO EN LA CISTERNA. 4.8★ con 107 opiniones en Google.",
+  "image": "https://mmedinacode.github.io/El-Ranchito-Web/fotos/fetuccini-terraza.jpg",
+  "url": "https://mmedinacode.github.io/El-Ranchito-Web/",
+  "telephone": "+56962018822",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ines Rivas 0259",
+    "addressLocality": "La Cisterna",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://instagram.com/elranchitococineriaycafe"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "11:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "11:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "11:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "11:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "11:30",
+      "closes": "19:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -143,7 +208,7 @@
         <div class="pilar-card reveal">
           <span class="pilar-num">01</span>
           <h3>Pizza napolitana y pastas frescas</h3>
-          <p>Masa crujiente, productos frescos — lo que más repiten los clientes en sus reseñas reales de Google, una y otra vez.</p>
+          <p>Masa crujiente, productos frescos — lo que más repiten los clientes en nuestras reseñas de Google, una y otra vez.</p>
         </div>
         <div class="pilar-card reveal">
           <span class="pilar-num">02</span>
@@ -172,7 +237,7 @@
     <div class="section-inner">
       <p class="section-eyebrow reveal">Carta</p>
       <h2 class="section-title reveal">Pizza, pasta, almuerzo y algo dulce</h2>
-      <p class="menu-note reveal">Estos son productos reales de El Ranchito, mencionados directamente en reseñas de clientes y en sus redes sociales. Su carta digital (fu.do) ya no está activa y no encontramos una lista de precios vigente en ningún canal — por eso todo aparece como <strong>"Consultar"</strong>, para no arriesgar un precio equivocado.</p>
+      <p class="menu-note reveal">Los precios se consultan en el local.</p>
 
       <div id="menuTabs" class="menu-tabs"></div>
       <div id="menuPanels" class="menu-panels"></div>
@@ -290,5 +355,6 @@
 <script>window.REDES={"intro": "Instagram es donde publican los platos del día y el movimiento de la terraza.", "instagram": {"user": "elranchitococineriaycafe", "seguidores": "2.303", "fotos": ["fotos/fetuccini-terraza.jpg", "fotos/pizza-mariscos.jpg", "fotos/brownie-interior.jpg"]}, "telefono": {"numero": "+56962018822"}};</script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
