@@ -24,22 +24,22 @@ document.getElementById('galTres').src = GAL_TRES_SRC;
    ============================================================ */
 const MENU = {
   'Pizzas': [
-    { n: 'Pizza napolitana', d: 'Masa crujiente, producto fresco — lo más elogiado en las reseñas reales.' },
+    { n: 'Pizza napolitana', d: 'Masa crujiente, producto fresco — lo más elogiado en las reseñas.' },
     { n: 'Pizzas dulces', d: 'Ej. Nutella con almendras — real, destacada en su Instagram.' },
     { n: 'Pizzas armadas', d: 'Arma tu pizza a tu gusto.' },
   ],
   'Pastas y almuerzos': [
-    { n: 'Fetuccini a la carbonara', d: '"Exquisita", según una reseña real de Google.' },
+    { n: 'Fetuccini a la carbonara', d: '"Exquisita", según una reseña de Google.' },
     { n: 'Ñoquis artesanales', d: '' },
     { n: 'Menú de almuerzo del día', d: 'Almuerzo casero todos los días, distinto de la carta de pizzas.' },
   ],
   'Café y repostería': [
     { n: 'Café en grano', d: '' },
     { n: 'Té e infusiones', d: 'Su propio "salón de té".' },
-    { n: 'Tortas a pedido', d: 'Repostería casera, real de su Instagram.' },
+    { n: 'Tortas a pedido', d: 'Repostería casera.' },
   ],
   'Bebidas': [
-    { n: 'Jugos naturales', d: '"Muy ricos", según una reseña real de Google.' },
+    { n: 'Jugos naturales', d: '"Muy ricos", según una reseña de Google.' },
   ],
 };
 
